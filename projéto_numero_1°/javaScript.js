@@ -1,3 +1,11 @@
-const receitasDoces = {
-    nome: "Bolo de maracuja"
-}
+const receitas = {
+    lanches: {
+        hamburguer: {
+
+        },
+        x_salada: {
+
+        },
+
+    }
+};
