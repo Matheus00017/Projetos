@@ -1,6 +1,15 @@
-const receitas = {
-    lanches: {
+const receitasLanches = {
+    receitasLanches: {
         hamburguer: {
+            nome:"",
+            tempoPreparo:"",
+            porcoes:"",
+            ingredientes:[
+
+            ],
+            modoPreparo:[
+
+            ]
 
         },
         x_salada: {
@@ -8,4 +17,11 @@ const receitas = {
         },
 
     }
-};
+}
+const receitasSalgados = {
+    receitaSalgados: {
+        coxinha: {
+
+        }
+    }
+}
