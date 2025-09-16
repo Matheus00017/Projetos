@@ -76,7 +76,7 @@ const receitasLanches = {
         }
 
     }
-}
+};
 const receitasSalgados = {
     receitaSalgados: {
         coxinha: {
@@ -162,16 +162,128 @@ const receitasSalgados = {
             ]
         }
     }
-}
+};
 const receitasBebidas = {
     bebidasSamAlcool: {
+        limonadaSuiça: {
+            nome: "Limonada Suiça",
+            ingredientes: [
+                "6 limões",
+                "1 lata de leite condensado",
+                "2 copos de água gelada",
+                "Gelo a gosto"
+            ],
+            modoPreparo: [
 
+            ]
+        },
+        smoothieFrutas: {
+            nome: "Smoothiende frutas Vermelhas",
+            ingredientes: [
+               "1 xícara de morangos congelados",
+               "1/2 xícara de framboesas",
+               "1 banana",
+               "1 xícara de iogurte natural",
+                "2 colheres de sopa de mel",
+                "1/2 xícara de leite",
+            ],
+            modoPreparo: [
+
+            ]   
+        },
+        vitamina: {
+            nome: "Vitamina de Banana com Aveia",
+            ingredientes: [
+                "2 bananas maduras",
+                "1 copo de leite gelado",
+                "2 colheres de sopa de aveia em flocos",
+                "1 colher de sopa de mel",
+                "1/2 colher de chá de canela",
+                "Gelo a gosto"
+            ],
+            modoPreparo: [
+
+            ]
+        },
+        milkshake: {
+            nome: "Milkshake de Morango",
+            ingredientes: [
+                "2 bolas de sorvete de baunilha",
+                "1 xícara de morangos frescos",
+                "1/2 xícaras de leite gelado",
+                "2 colheres de sopa de açucar",
+                "Chantilly para decorar",
+                "Morango para decorar"
+            ],
+            modoPreparo: [
+
+            ]
+        }
     },
+
     bebidasAlcoolicas:{
-        
+        caipirinha:{
+           nome: "Caipirinha Clássica",
+           ingredientes: [
+            "2 limões",
+            "2 colheres de sopa de açucar",
+            "60ml de cachaça",
+            "Gelo picado"
+           ],
+           modoPreparo: [
+
+           ] 
+        },
+        mojito: {
+            nome: "Mojito Cubano",
+           ingredientes: [
+            "10 folhas de hortelã fresca",
+            "1/2 limão cortado em pedaços",
+            "2 colheres de chá de açúcar",
+            "60ml de rum branco",
+            "Água com gás",
+            "Gelo"
+           ],
+           modoPreparo: [
+            
+           ]
+        },
+        sangria: {
+            nome: "Sangria Espanhola",
+           ingredientes: [
+            "1 garrafa de vinho tinto seco",
+            "2 pêssegos cortados",
+            "2 maçãs cortadas",
+            "1 laranja cortada em rodelas",
+            "1/4 xícara de açucar",
+            "60ml de brandy",
+            "Refrigerante de limão",
+            "Canela em pau"
+           ],
+           modoPreparo: [
+            
+           ]
+        },
+        gimlet: {
+            nome: "Gimlet de gin",
+           ingredientes: [
+            "60ml de gin",
+            "20ml de suco de limão fresco",
+            "20ml de xarope simples",
+            "Gelo",
+            "Raspa de limão para decorar"
+           ],
+           modoPreparo: [
+            
+           ]
+        }
     }
-}
+};
 
 const receitasSobremesa = {
-    receitasSobremesa: {}
+    receitasSobremesa: {
+        tiramisuClassico: {
+
+        },
+    }
 }
