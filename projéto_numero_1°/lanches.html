@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receita Fácil: Lanches</title>
     <link rel="shortcut icon" href="imagens/livro de receitas.ico" type="image/x-icon">
+    <style>
+        .card { border: 1px solid #ccc; padding: 10px; margin: 10px; max-width: 250px; display: inline-block; }
+        .card img { width: 100%; border-radius: 8px; }
+    </style>
 </head>
 <body>
     <h1>Lanches</h1>
 
-    
-</head>
-<body>
-    
+    <section id="container"></section>
 
+    <script src="js/receitas.js"></script>
+    <script>
+        function criarCard(receita) {
+            return `
+                <div class="card">
+                    <img src="${receita.imagem}" alt="${receita.nome}">
+                    <h2>${receita.nome}</h2>
+                    <p><b>Tempo:</b> ${receita.tempoPreparo}</p>
+                    <p><b>Porções:</b> ${receita.porcoes}</p>
+                </div>
+            `;
+        }
+
+        const container = document.getElementById("container");
+
+        Object.values(receitasLanches).forEach(receita => {
+            container.innerHTML += criarCard(receita);
+        });
+    </script>
 </body>
 </html>

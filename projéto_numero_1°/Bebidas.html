@@ -8,10 +8,32 @@
 </head>
 <body>
     <h1>bebidas</h1>
-    <section id="receitas-comtainer">
+    <section id="container">
         <div>
 
         </div>
     </section>
+    <script src="js/receitas.js"></script>
+    <script>
+    function criarCard(receitas) {
+      return `
+        <div class="card">
+          <img src="${receitas.imagem}" alt="${receitas.nome}">
+          <h2>${receitas.nome}</h2>
+          <p><b>Tempo:</b> ${receitas.tempoPreparo}</p>
+          <p><b>Porções:</b> ${receitas.porcoes}</p>
+        </div>
+      `;
+    }
+
+   const container = document.getElementById("container");
+
+        // percorre "semAlcool" e "alcoolicas"
+        Object.values(receitasBebidas).forEach(grupo => {
+          Object.values(grupo).forEach(receita => {
+            container.innerHTML += criarCard(receita);
+          });
+        });
+    </script>
 </body>
 </html>

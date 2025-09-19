@@ -1,5 +1,4 @@
 const receitasLanches = {
-    receitasLanches: {
         hamburguer: {
             nome: "Hambúrguer Clássico",
             tempoPreparo:"40 minutos",
@@ -56,7 +55,7 @@ const receitasLanches = {
         },
         sanduiche_natural: {
             nome:"Sanduiche Natural de frango",
-            tempoPreparo: "25 minutoa",
+            tempoPreparo: "25 minutos",
             porcoes: "3 porções",
             imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2SuGokjM38zqhfYachGBjbX7sFnaDyEC3UA&s",
             ingredientes: [
@@ -77,8 +76,6 @@ const receitasLanches = {
             ]
 
         }
-
-    }
 };
 const receitasSalgados = {
     receitaSalgados: {
@@ -299,7 +296,7 @@ const receitasBebidas = {
         },
         sangria: {
             nome: "Sangria Espanhola",
-            imagem: "",
+            imagem: "https://cdn.craft.cloud/224393fa-1975-4d80-9067-ada3cb5948ca/assets/detail_Red_Sangria_2_2022.jpg",
            ingredientes: [
             "1 garrafa de vinho tinto seco",
             "2 pêssegos cortados",
@@ -431,7 +428,7 @@ const receitasSobremesa = {
             ]
         },
         mouseMaracuja: {
-            nome: "Mouse de maracujá",
+            nome: "Mousse de maracujá",
             tempoPreparo: "20 minutos + 2 horas na geladeira",
             rendimento: "6 taças",
             dificuldade: "Facíl",
@@ -476,8 +473,8 @@ const receitasSobremesa = {
                     "80g de manteiga derretida",
                     "2 colheres de sopa de açúcar"
                 ],
-                recehio: [
-                     "600g de cream cheese em temperatura ambiente",
+                recheio: [
+                    "600g de cream cheese em temperatura ambiente",
                     "2/3 xícara (130g) de açúcar",
                     "3 ovos grandes",
                     "1 colher de chá de extrato de baunilha",
@@ -548,3 +545,4 @@ const receitasSobremesa = {
         }
     }
 };
+

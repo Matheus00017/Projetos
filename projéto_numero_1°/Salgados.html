@@ -8,5 +8,27 @@
 </head>
 <body>
     <h1>Salgados</h1>
+
+    <script src="js/receitas.js"></script>
+    <script>
+        function criarCard(receita) {
+      return `
+        <div class="card">
+          <img src="${receita.imagem}" alt="${receita.nome}">
+          <h2>${receita.nome}</h2>
+          <p><b>Tempo:</b> ${receita.tempoPreparo}</p>
+          <p><b>Porções:</b> ${receita.porcoes}</p>
+        </div>
+      `;
+    }
+    
+    const container = document.getElementById("container");
+
+    Object.values(receitasSalgados).forEach(grupo => {
+      Object.values(grupo).forEach(receita => {
+        container.innerHTML += criarCard(receita);
+      });
+    });
+    </script>
 </body>
 </html>
