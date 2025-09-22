@@ -171,6 +171,8 @@ const receitasBebidas = {
         limonadaSuiça: {
             imagem: "https://cdn.casaeculinaria.com/wp-content/uploads/2024/04/29114609/Limonada-suica-1.webp",
             nome: "Limonada Suiça",
+            tempoPreparo: "10 minutos",
+            porcoes: "4 copos",
             ingredientes: [
                 "6 limões",
                 "1 lata de leite condensado",
@@ -188,6 +190,8 @@ const receitasBebidas = {
         },
         smoothieFrutas: {
             nome: "Smoothiende frutas Vermelhas",
+             tempoPreparo: "8 minutos",
+            porcoes: "2 copos",
             imagem: "https://images.ctfassets.net/qfxflpv0atz9/6fSHImqwq3XnNLSToLvAxe/4ecdedc7d36e7c3ae68fb4ea2c504981/20220126171108-KAD_Blog_smoothie-frutas-vermelhas_1920x1080.png?fm=webp&q=90&w=750&h=500",
             ingredientes: [
                "1 xícara de morangos congelados",
@@ -209,6 +213,8 @@ const receitasBebidas = {
         },
         vitamina: {
             nome: "Vitamina de Banana com Aveia",
+            tempoPreparo: "5 minutos",
+            porcoes: "2 copos",
             imagem: "https://www.oitedi.com.br/_next/image?url=https%3A%2F%2Ftedi-production.s3.amazonaws.com%2Fcooking_recipes%2Ffood_description%2F3ba6f6a4315c9a6fcf8e41ca95957a4767adc47c.png&w=1080&q=70",
             ingredientes: [
                 "2 bananas maduras",
@@ -230,6 +236,8 @@ const receitasBebidas = {
         },
         milkshake: {
             nome: "Milkshake de Morango",
+            tempoPreparo: "7 minutos",
+            porcoes: "2 copos",
             imagem: "https://veganoporquesim.com.br/wp-content/uploads/2022/10/Milk-Shake-de-Morango-Vegano.webp",
             ingredientes: [
                 "2 bolas de sorvete de baunilha",
@@ -255,6 +263,8 @@ const receitasBebidas = {
     bebidasAlcoolicas:{
         caipirinha:{
            nome: "Caipirinha Clássica",
+           tempoPreparo: "5 minutos",
+           porcoes: "1 copo",
            imagem: "https://i.panelinha.com.br/i1/bk-8730-blog-caipirinha-de-limao.webp",
            ingredientes: [
             "2 limões",
@@ -274,6 +284,8 @@ const receitasBebidas = {
         },
         mojito: {
             nome: "Mojito Cubano",
+            tempoPreparo: "8 minutos",
+            porcoes: "1 copo",
             imagem: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mojito_made_with_rum%2C_lime%2C_sugar%2C_mint%2C_club_soda%2C_served_in_a_tall_glass_-_Evan_Swigart.jpg",
            ingredientes: [
             "10 folhas de hortelã fresca",
@@ -296,6 +308,8 @@ const receitasBebidas = {
         },
         sangria: {
             nome: "Sangria Espanhola",
+            tempoPreparo: "15 minutos + 2 horas geladeira",
+            porcoes: "6 taças",
             imagem: "https://cdn.craft.cloud/224393fa-1975-4d80-9067-ada3cb5948ca/assets/detail_Red_Sangria_2_2022.jpg",
            ingredientes: [
             "1 garrafa de vinho tinto seco",
@@ -319,6 +333,8 @@ const receitasBebidas = {
         },
         gimlet: {
             nome: "Gimlet de gin",
+            tempoPreparo: "3 minutos",
+            porcoes: "1 taça",
             imagem: "https://recipe.awesomedrinks.com/media/thumbnails/cocktails/gin_gimlet.jpg.700x700_q85_crop.jpg",
            ingredientes: [
             "60ml de gin",
