@@ -17,23 +17,42 @@
     <script src="js/receitas.js"></script>
     <script>
           function criarCard(receita) {
-      return `
-        <div class="card">
-          <img src="${receita.imagem}" alt="${receita.nome}">
-          <h2>${receita.nome}</h2>
-          <p><b>Tempo:</b> ${receita.tempoPreparo}</p>
-          <p><b>Porções:</b> ${receita.rendimento}</p>
-        </div>
-      `;
-    }
-
-    const container = document.getElementById("container");
-
-    Object.values(receitasSobremesa).forEach(grupo => {
-      Object.values(grupo).forEach(receita => {
-        container.innerHTML += criarCard(receita);
-      });
-    });
+            
+            let ingredientesHTML = '<div class="ingredientes"><h3>Ingredientes:</h3>';
+            Object.entries(receita.ingredientes).forEach(([categoria, itens]) => {
+                ingredientesHTML += `<h4>${categoria.charAt(0).toUpperCase() + categoria.slice(1)}:</h4>`;
+                ingredientesHTML += '<ul>';
+                itens.forEach(item => {
+                    ingredientesHTML += `<li>${item}</li>`;
+                });
+                ingredientesHTML += '</ul>';
+            });
+            ingredientesHTML += '</div>';
+            
+            // Processar modo de preparo
+            let modoPreparoHTML = '<div class="modo-preparo"><h3>Modo de Preparo:</h3><ol>';
+            receita.modoPreparo.forEach(passo => {
+                modoPreparoHTML += `<li>${passo}</li>`;
+            });
+            modoPreparoHTML += '</ol></div>';
+            return `
+                <div class="card">
+                    <img src="${receita.imagem}" alt="${receita.nome}">
+                    <h2>${receita.nome}</h2>
+                    <p><b>Tempo:</b> ${receita.tempoPreparo}</p>
+                    <p><b>Porções:</b> ${receita.rendimento}</p>
+                    <p><b>Dificuldade:</b> ${receita.dificuldade}</p>
+                    ${ingredientesHTML}
+                    ${modoPreparoHTML}
+                </div>
+            `;
+        }
+        const container = document.getElementById("container");
+        Object.values(receitasSobremesa).forEach(grupo => {
+            Object.values(grupo).forEach(receita => {
+                container.innerHTML += criarCard(receita);
+            });
+        });
     </script>
 </body>
 </html>
