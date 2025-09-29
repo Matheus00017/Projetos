@@ -16,19 +16,32 @@
     </section>
     <script src="js/receitas.js"></script>
     <script>
-    function criarCard(receitas) {
-      return `
-        <div class="card">
-          <img src="${receitas.imagem}" alt="${receitas.nome}">
-          <h2>${receitas.nome}</h2>
-          <p><b>Tempo:</b> ${receitas.tempoPreparo}</p>
-          <p><b>Porções:</b> ${receitas.porcoes}</p>
-        </div>
-      `;
+    function criarCard(receita) {
+        let ingredientesHTML = '<div class="ingredientes"><h3>Ingredientes:</h3><ul>';
+        receita.ingredientes.forEach(item => {
+        ingredientesHTML += `<li>${item}</li>`;
+        });
+        ingredientesHTML += '</ul></div>';
+
+        // Criar HTML do modo de preparo
+        let modoPreparoHTML = '<div class="modo-preparo"><h3>Modo de Preparo:</h3><ol>';
+        receita.modoPreparo.forEach(passo => {
+        modoPreparoHTML += `<li>${passo}</li>`;
+        });
+        modoPreparoHTML += '</ol></div>';
+
+        return `
+          <div class="card">
+            <img src="${receita.imagem}" alt="${receita.nome}">
+            <h2>${receita.nome}</h2>
+            <p><b>Tempo:</b> ${receita.tempoPreparo}</p>
+            <p><b>Porções:</b> ${receita.porcoes}</p>
+            ${ingredientesHTML}
+            ${modoPreparoHTML}
+          </div>
+        `;
     }
-
    const container = document.getElementById("container");
-
         // percorre "semAlcool" e "alcoolicas"
         Object.values(receitasBebidas).forEach(grupo => {
           Object.values(grupo).forEach(receita => {

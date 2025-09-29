@@ -1,8 +1,85 @@
-*{
-    padding: 0;
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: cyan;
+body {
+    font-family: 'Georgia', serif;
+    background: #fdf6e3; /* cor de papel */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    border-bottom: 3px double #8b5e3c; /* linha decorativa */
+    padding-bottom: 10px;
+}
+
+/* Seções do livro */
+section {
+    margin: 30px auto;
+    max-width: 900px;
+    background: #fffaf0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e2d5c4;
+}
+
+/* Cada receita */
+.card {
+    border: 1px solid #d4b483;
+    background: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagens */
+.card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Cabeçalho da receita */
+.card h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #8b4513;
+}
+
+/* Listas */
+.ingredientes ul, 
+.modo-preparo ol {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+/* Ingredientes destacados */
+.ingredientes h3,
+.modo-preparo h3 {
+    color: #5a3e2b;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #d4b483;
+    font-size: 1.2rem;
+}
+
+/* "Capítulos" do livro (Lanches, Salgados, Sobremesas, etc.) */
+section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #4e342e;
+    text-align: left;
 }

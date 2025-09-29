@@ -31,7 +31,7 @@ const receitasLanches = {
             nome: "X-salada",
             tempoPreparo: "30 minutos",
             porcoes: "3 porções",
-            imagem: "https://static.codepill.com.br/domains/7e4e09e5-31af-44d5-bd1e-428319709832/products/gallery_6a868b45-ddf4-4a4f-b030-dd9172b363fb.jpg",
+            imagem: "https://s2-receitas.glbimg.com/MBXXThem86JdWaXz95KsIv_swfc=/0x0:1024x576/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/C/9/qcgPqQTNSYuN0M8qR9hg/x-salada-caseiro.jpg",
             ingredientes: [
                 "3 pães de hambúrguer",
                 "300 g de carne moída",
@@ -115,7 +115,7 @@ const receitasSalgados = {
             nome: "Pastel frito",
             tempoPreparo: "50 minutos",
             porcoes: "15 unidades",
-            imagem: "https://www.receitasdemae.com.br/wp-content/uploads/2009/09/Pastel-de-feira-683x1024.jpg",
+            imagem: "https://prodcontent.yoki.com.br/wp-content/uploads/2024/09/Pastel-Mineiro-800x450-1.jpg",
             ingredientes: [
                 "300g de farinha de trigo",
                 "2 ovos",
