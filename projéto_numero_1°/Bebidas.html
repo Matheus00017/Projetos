@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receita Fácil: Bebidas</title>
     <link rel="shortcut icon" href="imagens/livro de receitas.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1>bebidas</h1>
-    <section id="container">
-        <div>
+  <nav>
+        <a href="login.html" id="login">
+          <img src="imagens/login.png" alt="login" width="60px" height=" 60px">
+        </a>
 
-        </div>
-    </section>
-    <script src="js/receitas.js"></script>
-    <script>
+        <a href="index.html" id="home">
+          <img src="imagens/home.png" alt="home">
+        </a>
+    </nav>
+
+    <h1>Bebidas</h1>
+    <h2>Bebidas sem álcool</h2>
+    <section id="sem-alcool"></section>
+
+    <h2>Bebidas alcoólicas</h2>
+    <section id="alcoolicas"></section>
+
+  <script src="js/receitas.js"></script>
+  <script>
     function criarCard(receita) {
         let ingredientesHTML = '<div class="ingredientes"><h3>Ingredientes:</h3><ul>';
         receita.ingredientes.forEach(item => {
@@ -23,7 +35,6 @@
         });
         ingredientesHTML += '</ul></div>';
 
-        // Criar HTML do modo de preparo
         let modoPreparoHTML = '<div class="modo-preparo"><h3>Modo de Preparo:</h3><ol>';
         receita.modoPreparo.forEach(passo => {
         modoPreparoHTML += `<li>${passo}</li>`;
@@ -41,13 +52,18 @@
           </div>
         `;
     }
-   const container = document.getElementById("container");
-        // percorre "semAlcool" e "alcoolicas"
-        Object.values(receitasBebidas).forEach(grupo => {
-          Object.values(grupo).forEach(receita => {
-            container.innerHTML += criarCard(receita);
-          });
-        });
-    </script>
+      const semAlcoolContainer = document.getElementById("sem-alcool");
+      const alcoolicasContainer = document.getElementById("alcoolicas");
+
+      
+      Object.values(receitasBebidas.bebidasSemAlcool).forEach(receita => {
+      semAlcoolContainer.innerHTML += criarCard(receita);
+      });
+
+
+      Object.values(receitasBebidas.bebidasAlcoolicas).forEach(receita => {
+      alcoolicasContainer.innerHTML += criarCard(receita);
+      });
+  </script>
 </body>
 </html>

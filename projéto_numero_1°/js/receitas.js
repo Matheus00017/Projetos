@@ -167,7 +167,7 @@ const receitasSalgados = {
     }
 };
 const receitasBebidas = {
-    bebidasSamAlcool: {
+    bebidasSemAlcool: {
         limonadaSuiça: {
             imagem: "https://cdn.casaeculinaria.com/wp-content/uploads/2024/04/29114609/Limonada-suica-1.webp",
             nome: "Limonada Suiça",
