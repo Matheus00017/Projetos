@@ -126,7 +126,7 @@ input {
 .catalogo-receitas input:hover {
     background-color: #ffe4b5;
     border-color: #d4b483;
-}
+
 
 .area {
     background-color: #d4b483;
@@ -186,8 +186,7 @@ a{
     border-radius: 8px;
     border: 4px solid #000000;
 }
-
-.login-form input,
+/*
 .login-form input {
     padding: 10px;
     font-size: 1rem;
@@ -195,3 +194,4 @@ a{
     border: 1px solid #000000;
     align-items: center;
 }
+*/
