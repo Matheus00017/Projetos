@@ -105,8 +105,11 @@ input {
     margin: 10px;
 }
 
-
-
+section,
+a,
+input[type="button"]{
+    text-align: center;
+}
 
 .area {
     text-align: center;
@@ -115,6 +118,24 @@ input {
 }
 
 .diminuir {
-    width: 500px;
+    width: auto;
     padding: 10px 15px;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.catalogo-receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.categoria {
+    width: 300px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
 }
