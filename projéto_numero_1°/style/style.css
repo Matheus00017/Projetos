@@ -127,6 +127,7 @@ input {
     background-color: #ffe4b5;
     border-color: #d4b483;
 
+}
 
 .area {
     background-color: #d4b483;
@@ -179,7 +180,8 @@ a{
     background: #fae09a;
     flex-direction: column;
     gap: 8px;
-    max-width: 400px;
+    max-width: 450px;
+    width: 400px;
     margin: 0px;
     align-items: center;
     padding: 15px;
