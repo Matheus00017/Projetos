@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de notas por Voz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <select id="lang">
+            <option value="pt-BR">Português</option>
+            <option value="en-US">English</option>
+            <option value="es-ES">Espanhol</option>
+        </select>
+
+        <button id="btnStart"></button>
+        <button id="btnStop"></button>
+        <button id="btnClear"></button>
+        <button id="btnSave"></button>
+    </div>
+
+    <label class="status" id="status">Status: parado</label>
+    <textarea id="texto" placeholder="Fale algo para ser escrito"></textarea>
+    <div class="tips">
+        <small>Recomendação</small>
+    </div>
+</body>
+</html>
