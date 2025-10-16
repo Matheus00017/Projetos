@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantometro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> calendario de Plantio (Plantometro)</h1>
+    <p>Descubra o que plantar em cada mês, de acordo com sua região.</p>
+    <label for="regiao">Selecione sua região</label>
+    <select id="regiao">
+        <option value="">--Escolha--</option>
+        <option value="sul">Sul</option>
+        <option value="sudeste">Sudeste</option>
+        <option value="centro-oeste">Centro-oeste</option>
+        <option value="nordeste">Nordeste</option>
+        <option value="norte">Norte</option>
+    </select>
+
+    <br><br>
+
+    <label for="mes">Selecione o mês:</label>
+    <select id="mes">
+        <option value="">--Escolha--</option>
+        <option value="janeiro">Janeiro</option>
+        <option value="fevereiro">Fevereiro</option>
+        <option value="março">Março</option>
+        <option value="abril">Abril</option>
+        <option value="maio">Maio</option>
+        <option value="junho">Junho</option>
+        <option value="julho">Julho</option>
+        <option value="agosto">Agosto</option>
+        <option value="setembro">Setembro</option>
+        <option value="outubro">Outubro</option>
+        <option value="novembro">Novembro</option>
+        <option value="dezembro">Dezembro</option>
+    </select>
+
+    <br><br>
+
+    <button id="btnmostrar">Exibir o que plantar</button>
+    <h2>Resultado</h2>
+    <div id="resultado"></div>
+</body>
+</html>
