@@ -1,5 +1,11 @@
 header {
-    background-image: url('../img/Slogan.png');
-    height: 300px;
-    width: 100%;
+    background-color: gray;
+}
+
+body {
+    background-color: black;
+}
+
+.menu {
+    background-color: rgb(61, 61, 61);
 }
