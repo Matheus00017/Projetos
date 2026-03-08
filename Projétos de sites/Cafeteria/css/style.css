@@ -5,11 +5,11 @@
 }
 
 :root{
-    --cor-Fundo: #0d0b09;           /* preto quente */
+    --cor-Fundo: #623809;           /* preto quente */
     --cor-Fundo2: #422d20;           /*Marrom escuro*/
     --cor--principal: #c8954a;       /*Dourado*/
     --cor--clara: #f5ede0;           /*bege claro*/
-    --cor--texto: #a89070;           /*marrom clarinho*/
+    --cor--texto: #d58e32;           /*marrom clarinho*/
     --cor--borda: #2e2218;           /*marrom escuro*/
 }
 header {
@@ -19,13 +19,32 @@ header {
     border-bottom: 2px solid var(--cor--borda);
     
 }
+.hero-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    background-color: var(--cor-Fundo);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.sobre h1 {
+    font-size: 2rem;
+    color: var(--cor--principal);
+    margin-bottom: 1.2rem;
+}
+
+
 .hero {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 3rem 0rem;
     background-color: var(--cor-Fundo);
 }
+
 .hero img {
     width: 100%;
     max-width: 500px;
@@ -60,10 +79,27 @@ body {
 }
 
 .sobre {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
     text-align: center;
+    flex: 0.5;
+    padding: 3rem 0rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-historia {
+    background-color: #f5ede0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    color: #3b2510;
+    font-size: 1rem;
+    line-height: 1.8;
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu {
