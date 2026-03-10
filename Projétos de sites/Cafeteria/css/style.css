@@ -21,12 +21,13 @@ header {
 }
 .hero-sobre {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 420px;
     background-color: var(--cor-Fundo);
-    gap: 2rem;
-    padding: 0 2rem;
+    gap: 0rem;
+    padding: 1rem 7rem 1rem 15.5rem;
+    margin: 0;
 }
 
 .sobre h1 {
@@ -38,17 +39,22 @@ header {
 
 .hero {
     flex: 1;
+    width: 45%;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 3rem 0rem;
+    align-items: flex-start;
+    padding: 3rem 0;
     background-color: var(--cor-Fundo);
+    margin: 2px 0px 0px 0px;
 }
 
 .hero img {
     width: 100%;
-    max-width: 500px;
+    max-width: 430px;
     height: auto;
+    margin-top: 1.3rem;
+    border-radius: 30px;
 }
 
 nav {
@@ -81,7 +87,9 @@ body {
 .sobre {
     text-align: center;
     flex: 0.5;
-    padding: 3rem 0rem 3rem 3rem;
+    width: 45%;
+    flex-shrink: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,36 +133,42 @@ body {
     background-color: var(--cor-Fundo2);
     border: 1.2px solid rgb(255, 255, 255, 0.4);
     border-radius: 8px;
-    padding: 0.8rem;
-    min-height: 280px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    min-height: 320px;
+    overflow: hidden;
 }
 
 .box img {
     width: 100%;
-    height: 120px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 6px;
+    object-position: center;
+    border-radius: 0;
+    display: block;
 }
 
 .box h3 {
     color: var(--cor--clara);
     font-size: 1rem;
     text-align: center;
+    padding: 0.5rem 0.8rem 0;
 }
 
 .preco {
     color: var(--cor--principal);
     font-size: 1.1rem;
     font-weight: 600;
+    padding: 0 0.8rem;
 }
 
 .btn {
     display: block;
-    width: 100%;
+    width: calc(100% - 1.6rem);
+    margin: auto 0.8rem 0.8rem;
     padding: 0.6rem;
     background-color: #8B6914;
     color: #fff5e0;
@@ -163,10 +177,75 @@ body {
     border-radius: 5px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-top: auto;
     transition: background-color 0.3s;
 }
 
 .btn:hover {
     background-color: #6b4f0f;
+}
+
+footer {
+    background-color: var(--cor--borda);
+    color: var(--cor--principal);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.85rem;
+    border-top: 2px solid var(--cor--principal); 
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+
+    .hero-sobre {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        margin: 0;
+        gap: 1.5rem;
+        min-height: auto;
+    }
+
+    .sobre {
+        width: 100%;
+        flex: none;
+    }
+
+    .hero {
+        width: 100%;
+        flex: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .hero img {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+
+    .box-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-historia {
+        aspect-ratio: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Nav menor */
+    nav ul {
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .sobre h1 {
+        font-size: 1.5rem;
+    }
 }

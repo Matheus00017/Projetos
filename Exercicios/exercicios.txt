@@ -5,20 +5,6 @@ Animações suaves ao scroll
 Design responsivo e moderno
 
 
-Calculadora de Gorjetas
-
-Interface para calcular gorjeta de restaurantes
-Divisão por número de pessoas
-Histórico de cálculos realizados
-
-
-Gerador de Paleta de Cores
-
-Gera paletas de cores aleatórias
-Copiar códigos hexadecimais ao clicar
-Salvar paletas favoritas no localStorage
-
-
 Lista de Tarefas com Categorias
 
 Adicionar, editar e remover tarefas
@@ -231,3 +217,8 @@ Editor visual de cenas 3D
 Sistema de física básico
 Exportação de projetos
 Biblioteca de assets
+
+===============================================================================================
+
+Sites
+
