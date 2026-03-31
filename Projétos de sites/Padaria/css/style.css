@@ -19,22 +19,29 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1.5px solid rgb(230, 230, 230);
 }
 
 nav{
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
     max-width: 1200px;
     justify-content: space-evenly;
+    border: 1.5px solid #713a1d;
 }
 
 .nav-menu{
     color: rgb(230, 230, 230);
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
 }
 
 header section{
-    width: 300px;
+    width: 300px ;
     max-width: 700px;
     display: flex;
     align-items: center;
@@ -44,10 +51,19 @@ header section{
 .slogan {
     padding:  10px 0px;
     height: auto;
-    min-width: 145px;
+    min-width: 156px;
     max-width: 280px;
     line-height: 1.4rem;
     background-color: rgb(230, 230, 230);
+    border-width: 5px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px rgba(67, 64, 64, 0.6);
+}
+
+.slogan p {
+    font-size: 1.3rem;
+    color: rgba(24, 20, 20, 0.8);
 }
 
 img {
@@ -55,5 +71,6 @@ img {
     max-width: 100%;
     height: auto;
     display: flex;
+    align-items: 0px 0px 0px 0px;
 }
 
