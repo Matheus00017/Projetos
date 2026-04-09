@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     width: 100%;
     height: 100%;
     background-color: #f5e6d3;
@@ -22,7 +22,7 @@ header {
     border: 1.5px solid rgb(230, 230, 230);
 }
 
-nav{
+nav {
     display: flex;
     padding-bottom: 10px;
     width: 100%;
@@ -33,15 +33,15 @@ nav{
     border: 1.5px solid #713a1d;
 }
 
-.nav-menu{
+.nav-menu {
     color: rgb(230, 230, 230);
     display: flex;
     padding-top: 5px;
     align-items: center;
 }
 
-header section{
-    width: 300px ;
+header section {
+    width: 300px;
     max-width: 700px;
     display: flex;
     align-items: center;
@@ -49,13 +49,12 @@ header section{
 }
 
 .slogan {
-    padding:  10px 0px;
+    padding: 10px 0px;
     height: auto;
     min-width: 156px;
     max-width: 280px;
     line-height: 1.4rem;
     background-color: rgb(230, 230, 230);
-    border-width: 5px;
     border: 1.5px solid black;
     border-radius: 8px;
     box-shadow: 4px 4px 0px rgba(67, 64, 64, 0.6);
@@ -71,6 +70,87 @@ img {
     max-width: 100%;
     height: auto;
     display: flex;
-    align-items: 0px 0px 0px 0px;
 }
 
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #eddfc8;
+    border: 1.5px solid rgb(230, 230, 230);
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.slider-container {
+    position: relative;
+    width: 40%;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 300px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(107, 62, 38, 0.8);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(107, 62, 38, 1);
+}
+
+.prev { left: 12px; }
+.next { right: 12px; }
+
+.texto-sobre {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fdf6ee;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+
+.texto-sobre h2 {
+    font-size: 1.8rem;
+    color: #4a2510;
+    margin-bottom: 6px;
+}
+
+.texto-sobre p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: #1a0f08;
+    text-align: justify;
+}
