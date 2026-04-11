@@ -10,6 +10,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    background-color: rgb(30, 30, 30);
 }
 
 header {
@@ -20,6 +21,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(to bottom, rgb(76,0,0), rgb(157,0,0));
+    border-bottom: 2px solid white;
 }
 
 header section{
@@ -43,4 +46,12 @@ nav {
 .nav-item {
     color: rgb(230, 230, 230);
     font-family: "Fira Sans", sans-serif;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid rgb(255, 166, 0, 0.5);
+    transition: 0.4s;
+    color: rgb(255, 166, 0);
+    
 }

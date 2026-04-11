@@ -15,6 +15,7 @@ header {
     width: inherit;
     height: auto;
     background-color: #6b3e26;
+    background-image: linear-gradient(to bottom, #6b3e48, #582004);
     padding: 30px 0;
     display: flex;
     flex-direction: column;
@@ -38,6 +39,13 @@ nav {
     display: flex;
     padding-top: 5px;
     align-items: center;
+    cursor: pointer;
+}
+
+.nav-menu:hover{
+    border-bottom: 2px solid rgb(192, 128, 129, 0.5s);
+    transition: 0.4s;
+    color: #C08081;
 }
 
 header section {
@@ -46,23 +54,6 @@ header section {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.slogan {
-    padding: 10px 0px;
-    height: auto;
-    min-width: 156px;
-    max-width: 280px;
-    line-height: 1.4rem;
-    background-color: rgb(230, 230, 230);
-    border: 1.5px solid black;
-    border-radius: 8px;
-    box-shadow: 4px 4px 0px rgba(67, 64, 64, 0.6);
-}
-
-.slogan p {
-    font-size: 1.3rem;
-    color: rgba(24, 20, 20, 0.8);
 }
 
 img {
